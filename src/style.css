@@ -1,0 +1,75 @@
+.hide{
+    display: none;
+}
+
+body{
+    display: grid;
+    box-sizing: border-box;
+    margin: 8px;
+    padding: 20px;
+    grid-template-columns: 1.5fr 7fr 1.5fr;
+    grid-template-rows: 1fr 9fr;
+    grid-template-areas: 
+        ".  .   head"
+        ".  body todo";
+    row-gap: 10px;
+    min-width: 500px;
+    min-height: 200px;
+    height: 50rem;
+}
+.h10{
+    grid-area: head;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: rgba(230, 224, 224, 0.7);
+    border-radius: 6%;
+}
+.h90{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    grid-area: body;
+}
+.w70{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 220px;
+    width: 300px;
+    background-color: rgba(230, 224, 224, 0.7);
+    border-radius: 6%;
+}
+#clock_container{
+    font-size: 18px;
+    
+}
+
+#todo_container{
+    background-color: rgba(230, 224, 224, 0.7);
+    border-radius: 6%;
+}
+
+#geo_container{
+    color: black;
+    font-size: 22px;
+    
+}
+.login_input_box{
+    position: relative;
+    right: 25px;
+    
+}
+.login_button{
+    position: relative;
+    left: 158px;
+    height: 24px;
+    width: 50px;
+    bottom: 23px;
+}
+.todo-form{
+    grid-area: todo;
+    
+}

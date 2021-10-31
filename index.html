@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="src/style.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="h10">
+        <div id="geo_container">
+            <div></div>
+            <div></div>
+        </div>
+
+    </div>
+
+    <div class="h90">
+        <!-- <div class="w15">w15</div>    -->
+        <div class="w70">  
+           <div id="clock_container">   
+               <span class="calendar">0000년 00월 00일 일요일</span> 
+               <span class="clock">00:00</span>  
+           </div>   <br/>
+           <div id="login_container" class="hide">   
+            <span class="login_input_box">
+                <div><input class="login_id" placeholder="ID"/></div>
+                <!-- <div><input class="login_password" placeholder="password"/></div> -->
+            </span> 
+               <button class="login_button">Login</button>
+           </div>
+           <div id="greeting" class="hide"></div>
+        </div>
+        <br/>
+        <div id="todo_container">
+            <form id="todo_form">
+                <input class="todo_form_input" type="text" placeholder="Todo List">
+            </form>
+        <ul id="todo_list"></ul>
+        </div>
+    </div>
+    
+    <script src="src/js/index.js"></script>
+    <script src="src/js/login.js"></script>
+    <script src="src/js/background.js"></script>
+    <script src="src/js/todo list.js"></script>
+    <script src="src/js/weather.js"></script>
+</body>
+</html>
